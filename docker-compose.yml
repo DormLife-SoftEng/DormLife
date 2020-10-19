@@ -5,9 +5,6 @@ services:
     image: ghcr.io/dormlife-softeng/backend-image:0.1-prod
     depends_on:
       - db
-    build:
-      context: .
-      target: production
     ports:
       - 5000:3000
     command: npm run start:prod
