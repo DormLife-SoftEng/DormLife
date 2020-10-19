@@ -12,11 +12,11 @@ services:
       - 5000:3000
     command: npm run start:prod
 
-db:
-  container_name: mongol
-  image: mongo
-  volumes:
-    - mongodata:/data/db
-  ports:
-    - "27017:27017"
+  db:
+    container_name: mongol
+    image: mongo
+    volumes:
+      - mongodata:/data/db
+    ports:
+      - "27017:27017"
 
