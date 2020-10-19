@@ -2,7 +2,7 @@ version: '3.7'
 services:
   backend:
     container_name: backend_provider
-    image: ghcr.io/dormlife-softeng/backend-image:0.1-prod
+    image: ghcr.io/dormlife-softeng/backend-image:0.2-prod
     depends_on:
       - db
     ports:
